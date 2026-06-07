@@ -264,6 +264,30 @@ footer {
     background: rgba(255, 255, 255, 0.1);
 }
 
+/* Privacy Page */
+.privacy-section ul {
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.privacy-section li {
+    margin-bottom: 10px;
+    color: var(--muted);
+}
+
+.status-card {
+    background: var(--surface-alt);
+    border-left: 4px solid var(--accent);
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 6px;
+}
+
+.status-indicator {
+    font-weight: bold;
+    color: var(--accent);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     header nav {
