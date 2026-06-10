@@ -202,6 +202,53 @@ footer {
     border-radius: 6px;
 }
 
+/* Map */
+#map-canvas {
+    width: 100%;
+    height: 500px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.map-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+@media (max-width: 768px) {
+    .map-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+#cultural-detail-pane {
+    background: var(--surface);
+    border: 2px solid rgba(80, 40, 20, 0.12);
+    padding: 20px;
+    border-radius: 8px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+#cultural-detail-pane h3 {
+    color: var(--heading);
+    margin-bottom: 10px;
+}
+
+#cultural-detail-pane p {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    color: var(--muted);
+}
+
+.detail-label {
+    font-weight: bold;
+    color: var(--accent);
+    margin-top: 15px;
+}
+
 /* Cookie Banner */
 .cookie-consent-banner {
     position: fixed;
@@ -319,6 +366,10 @@ footer {
 
     .language-grid {
         grid-template-columns: 1fr;
+    }
+
+    #map-canvas {
+        height: 400px;
     }
 }
 

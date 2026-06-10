@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tidbinbilla Cultural Sites Map - Marked sites in Tidbinbilla with cultural and ecological notes.">
+    <meta name="author" content="Digital Technology Project">
+
+    <title>Significant Cultural Sites | Tidbinbilla Heritage</title>
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- navigation header -->
+    <header>
+        <nav>
+            <div class="logo">Tidbinbilla</div>
+            <ul>
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="sites-map.html" title="Significant Cultural Sites">Sites Map</a></li>
+                <li><a href="seasonal-knowledge.html" title="Seasonal Ecological Knowledge">Seasonal Knowledge</a></li>
+                <li><a href="privacy-policy.html" title="Privacy and Compliance">Privacy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- main content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Significant Cultural Sites</h1>
+            <p>A map of Tidbinbilla with marked sites and short cultural notes.</p>
+        </section>
+
+        <!-- Sites Overview Section -->
+        <section>
+            <h2>The Cultural Landscape of Tidbinbilla</h2>
+            <p>The Tidbinbilla landscape contains multiple sites of deep cultural importance to the Ngunnawal People. These locations represent long-term occupation, practical land use, and strong ties to the natural environment. Each site below is marked on the interactive map.</p>
+
+            </section>
+
+        <!-- Map Container -->
+        <section>
+            <div class="map-container">
+                <!-- Google Maps Canvas -->
+                <div id="map-canvas"></div>
+
+                <!-- Cultural Detail Pane -->
+                <div id="cultural-detail-pane">
+                    <p style="color: #8a8a8a; text-align: center;">Click a marker on the map to view detailed cultural information about each site</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sites Summary Section -->
+        <section>
+            <h2>Summary of Marked Sites</h2>
+
+            <div style="margin-top: 1.5rem;">
+                <h3 style="color: #6b4e3d;">Birrigai Rock Shelter</h3>
+                <p>One of the oldest known Aboriginal rock shelters in the world, with evidence of occupation dating back over 21,000 years to the last Ice Age.</p>
+
+                <h3 style="color: #6b4e3d; margin-top: 1.5rem;">Gibraltar Peak / Range Entry</h3>
+                <p>A granite peak overlooking the Tidbinbilla valley, with views across the surrounding ranges. The area includes rock shelters that hold cultural significance for the Ngunnawal people.</p>
+
+                <h3 style="color: #6b4e3d; margin-top: 1.5rem;">Tidbinbilla Valley Floor & River Network</h3>
+                <p>The valley floor and river network provided water, fish, and plant resources, and was likely used as a shared camping area. Grinding grooves can be seen on rocks near the river.</p>
+
+                <h3 style="color: #6b4e3d; margin-top: 1.5rem;">Bogong Moth High Alpine Refuge</h3>
+                <p>High mountain rock shelters where Bogong Moths gather in huge numbers each summer, providing a seasonal food source for Aboriginal groups across the region.</p>
+            </div>
+        </section>
+
+        <!-- Archaeological Context Section -->
+        <section>
+            <h2>Archaeological & Cultural Context</h2>
+            <p>The sites marked on this map represent locations documented through:</p>
+
+            <ul style="margin-left: 2rem; margin-top: 1rem;">
+                <li><strong>Archaeological Excavation:</strong> Over time studies of stone tools, faunal remains, and occupation layers</li>
+                <li><strong>Ethnographic Documentation:</strong> Historical records and Ngunnawal oral histories</li>
+                <li><strong>Landscape Analysis:</strong> Geographic features, water sources, and resource distribution patterns</li>
+                <li><strong>Material Culture Studies:</strong> Analysis of stone tools, grinding implements, and other artifacts</li>
+            </ul>
+
+           </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <p>We acknowledge the Ngunnawal People as the traditional custodians of this land.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.875rem;">This website uses local browser storage for cookie preferences and includes Google Analytics.</p>
+    </footer>
+
+    <!-- cookie consent banner -->
+    <div id="cookie-banner" class="cookie-consent-banner">
+        <div class="cookie-text">
+            <p><strong>Cookie & Privacy Notice</strong></p>
+            <p>This website uses local storage for cookie preferences and includes Google Analytics. <a href="privacy-policy.html">Read our privacy policy</a></p>
+        </div>
+        <div class="cookie-actions">
+            <button id="cookie-accept-btn" class="cookie-accept">Accept</button>
+            <button id="cookie-decline-btn" class="cookie-decline">Decline</button>
+        </div>
+    </div>
+
+    <!-- javascript modules -->
+    <!-- Google Maps API - IMPORTANT: Replace YOUR_API_KEY with actual Google Maps API key -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKM5mdYwyyRbFQa-lx1WX6bW8EjyXEXGU"></script>
+
+    <!-- Main global script -->
+    <script type="module" src="js/main.js"></script>
+
+    <!-- Google Maps interaction module -->
+    <script type="module" src="js/map-interact.js"></script>
+</body>
+</html>
