@@ -3,8 +3,8 @@
 import { TidbinbillaData } from './data.js';
 
 const seasons = TidbinbillaData.seasons;
-let currentSeason = 'winter_frost';
-
+let currentSeason = 'winter';
+// init seasonal change buttons with events
 function initSeasonalContent() {
     const buttons = document.querySelectorAll('.seasonal-selector button');
     if (buttons.length === 0) return;
@@ -23,7 +23,7 @@ function initSeasonalContent() {
 
     renderSeason(currentSeason);
 }
-
+//
 function renderSeason(seasonKey) {
     const season = seasons[seasonKey];
     const contentArea = document.getElementById('seasonal-content');
@@ -38,7 +38,7 @@ function renderSeason(seasonKey) {
     const infoCard = document.createElement('div');
     infoCard.className = 'seasonal-info-card';
     infoCard.style.gridColumn = '1 / -1';
-
+// change innerhtml of the season info card
     infoCard.innerHTML = `
         <h2>${season.title}</h2>
 

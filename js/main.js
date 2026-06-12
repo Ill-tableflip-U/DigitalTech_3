@@ -7,11 +7,11 @@ function initCookieConsent() {
     const acceptBtn = document.getElementById('cookie-accept-btn');
     const declineBtn = document.getElementById('cookie-decline-btn');
     const storageKey = 'tidbinbilla_cookie_consent';
-
-    if (localStorage.getItem(storageKey) === 'accepted') {
+    //check if user already accepted cookies
+    if (localStorage.getItem(storageKey) === 'accepted'|| localStorage.getItem(storageKey) === 'declined') {
         banner.classList.add('hidden');
     }
-
+// save user preference to localstorage
     if (acceptBtn) {
         acceptBtn.addEventListener('click', () => {
             localStorage.setItem(storageKey, 'accepted');
@@ -22,17 +22,18 @@ function initCookieConsent() {
 
     if (declineBtn) {
         declineBtn.addEventListener('click', () => {
+            localStorage.setItem(storageKey, 'declined');
             banner.classList.add('hidden');
         });
     }
 }
-
-function initLanguageMatrix() {
+//delete following
+function vocabularyCards() {
     const wordCards = document.querySelectorAll('.word-card');
     const displayArea = document.getElementById('translation-display');
 
     if (wordCards.length === 0 || !displayArea) return;
-
+//to be deleted: unnecessary 
     wordCards.forEach(card => {
         card.addEventListener('click', () => {
             const word = card.getAttribute('data-word');
@@ -56,5 +57,5 @@ function initLanguageMatrix() {
 
 document.addEventListener('DOMContentLoaded', () => {
     initCookieConsent();
-    initLanguageMatrix();
+    vocabularyCards();
 });
