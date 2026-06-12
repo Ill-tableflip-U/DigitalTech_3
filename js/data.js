@@ -72,21 +72,25 @@ export const TidbinbillaData = {
     seasons: {
         winter_frost: {
             title: "Winter",
+            colour: "#2f5a79",
             monthsActive: "June - August",
             description: "Winter has cooler days, cold nights, and regular rain with frost in the early mornings."
         },
         spring_growth: {
             title: "Spring",
+            colour: "#2d5f1f",
             monthsActive: "September - November",
             description: "Spring has mild temperatures, increasing rain, and new plant growth across the reserve."
         },
         summer_harvest: {
             title: "Summer",
+            colour: "#c17527",
             monthsActive: "December - February",
             description: "Summer is warm to hot, with lower rainfall in the high country and cooler conditions at altitude."
         },
         autumn_transition: {
             title: "Autumn",
+            colour: "#7a5531",
             monthsActive: "March - May",
             description: "Autumn has cooler days, clearing winds, and occasional rain before winter."
         }

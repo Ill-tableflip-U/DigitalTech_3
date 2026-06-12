@@ -31,6 +31,10 @@ function renderSeason(seasonKey) {
 
     contentArea.innerHTML = '';
 
+    document.documentElement.style.setProperty('--season-primary', season.colour);
+    document.documentElement.style.setProperty('--season-accent', season.colour);
+    document.documentElement.style.setProperty('--season-background', season.colour);
+
     const infoCard = document.createElement('div');
     infoCard.className = 'seasonal-info-card';
     infoCard.style.gridColumn = '1 / -1';

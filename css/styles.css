@@ -16,6 +16,9 @@
     --button-bg: #b35d1f;
     --button-hover: #8f4414;
     --banner-bg: #4a190d;
+    --season-primary: #2f5a79;
+    --season-accent: var(--season-primary);
+    --season-background: var(--season-primary);
 }
 
 * {
@@ -27,7 +30,7 @@
 body {
     font-family: Arial, sans-serif;
     color: var(--text);
-    background-color: var(--season-background, var(--bg));
+    background-color: color-mix(in srgb, var(--season-background, var(--bg)) 12%, var(--bg));
     line-height: 1.6;
 }
 
