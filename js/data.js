@@ -61,5 +61,34 @@ export const TidbinbillaData = {
             description2: "People travelled here during the warmer months.",
             imageUrl: ""
         }
-    ]
+    ],
+
+    resources: [
+        { name: "Bogong Moth", type: "Fauna", notes: "Moths gather in the high country each summer and were collected as a valuable seasonal food source." },
+        { name: "Fish", type: "Fauna", notes: "Rivers and streams provided a reliable source of fish throughout the year." },
+        { name: "Wattle Seeds", type: "Flora", notes: "Seeds were collected and ground into flour as a food source." }
+    ],
+
+    seasons: {
+        winter_frost: {
+            title: "Winter",
+            monthsActive: "June - August",
+            description: "Winter has cooler days, cold nights, and regular rain with frost in the early mornings."
+        },
+        spring_growth: {
+            title: "Spring",
+            monthsActive: "September - November",
+            description: "Spring has mild temperatures, increasing rain, and new plant growth across the reserve."
+        },
+        summer_harvest: {
+            title: "Summer",
+            monthsActive: "December - February",
+            description: "Summer is warm to hot, with lower rainfall in the high country and cooler conditions at altitude."
+        },
+        autumn_transition: {
+            title: "Autumn",
+            monthsActive: "March - May",
+            description: "Autumn has cooler days, clearing winds, and occasional rain before winter."
+        }
+    }
 };

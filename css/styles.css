@@ -249,6 +249,101 @@ footer {
     margin-top: 15px;
 }
 
+/* Seasonal Selector */
+.seasonal-selector {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.seasonal-selector button {
+    padding: 10px 20px;
+    background: var(--surface-alt);
+    border: 2px solid rgba(80, 40, 20, 0.12);
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.seasonal-selector button:hover {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+}
+
+.seasonal-selector button.active {
+    background: var(--season-accent, var(--accent-dark));
+    color: white;
+    border-color: var(--season-accent, var(--accent-dark));
+}
+
+/* Seasonal Content */
+#seasonal-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.seasonal-item {
+    background: var(--surface);
+    border: 2px solid rgba(80, 40, 20, 0.12);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.seasonal-item:hover {
+    border-color: rgba(80, 40, 20, 0.12);
+}
+
+.seasonal-item h3 {
+    color: var(--heading);
+    margin-bottom: 10px;
+}
+
+.item-type {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.seasonal-item p {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.seasonal-info-card {
+    background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+    color: white;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    grid-column: 1 / -1;
+}
+
+.seasonal-info-card h2 {
+    color: var(--accent-light);
+}
+
+.info-section {
+    margin-bottom: 20px;
+}
+
+.section-label {
+    font-weight: bold;
+    color: var(--accent-light);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
 /* Cookie Banner */
 .cookie-consent-banner {
     position: fixed;
@@ -370,6 +465,10 @@ footer {
 
     #map-canvas {
         height: 400px;
+    }
+
+    .seasonal-selector button {
+        width: 100%;
     }
 }
 
