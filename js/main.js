@@ -27,33 +27,6 @@ function initCookieConsent() {
         });
     }
 }
-//delete following
-function vocabularyCards() {
-    const wordCards = document.querySelectorAll('.word-card');
-    const displayArea = document.getElementById('translation-display');
-
-    if (wordCards.length === 0 || !displayArea) return;
-//to be deleted: unnecessary 
-    wordCards.forEach(card => {
-        card.addEventListener('click', () => {
-            const word = card.getAttribute('data-word');
-            showTranslation(word);
-        });
-    });
-
-    function showTranslation(word) {
-        const vocab = TidbinbillaData.vocabulary.find(v => v.word === word);
-        if (!vocab) return;
-
-        displayArea.innerHTML = `
-            <div style="text-align: center;">
-                <h3 style="margin: 0 0 10px 0; color: var(--heading);">${vocab.word}</h3>
-                <p style="margin: 0 0 10px 0; font-weight: bold; font-size: 1.05rem; color: var(--accent);">${vocab.translation}</p>
-                <p style="margin: 0; font-size: 0.95rem; color: #6a4f39;">${vocab.usage}</p>
-            </div>
-        `;
-    }
-}
 
 document.addEventListener('DOMContentLoaded', () => {
     initCookieConsent();
