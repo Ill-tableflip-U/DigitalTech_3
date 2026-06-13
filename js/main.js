@@ -30,5 +30,4 @@ function initCookieConsent() {
 
 document.addEventListener('DOMContentLoaded', () => {
     initCookieConsent();
-    vocabularyCards();
 });
